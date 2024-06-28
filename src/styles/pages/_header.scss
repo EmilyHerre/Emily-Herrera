@@ -1,0 +1,206 @@
+@import '/src/styles/base/breakpoints';
+
+
+.page {
+    height: 100vh;
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: white;
+
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .cuadro {
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            animation: drop 2s forwards;
+            background: linear-gradient(180deg, rgba(217, 204, 224, 1) 0%, rgba(189, 162, 203, 1) 100%);
+
+        }
+
+        .logo {
+            position: absolute;
+            opacity: 0;
+            padding: 4%;
+            top: 10px;
+            left: 10px;
+            color: white;
+            animation: fadeIn 2s forwards;
+
+            &-word {
+                font-size: clamp(2.0rem, 7vw, 3.5rem);
+            }
+        }
+
+        .p-container {
+            gap: 0.5rem;
+            position: absolute;
+            display: flex;
+            width: 80%;
+            flex-direction: column-reverse;
+            justify-content: center;
+
+
+        }
+
+        .portfolio-name {
+            opacity: 0;
+            color: white;
+            font-size: clamp(4rem, 10vw, 7rem);
+            animation: fadeIn 2s forwards;
+        }
+
+        .portfolio-title {
+
+            opacity: 0;
+            color: #632584;
+            animation: fadeIn 1s forwards;
+            font-size: clamp(1.5rem, 5vw, 3.5rem);
+            animation-delay: 0.5s;
+
+        }
+
+        .more-about-me {
+            bottom: 10px;
+            opacity: 0;
+            color: white;
+            animation: fadeIn 3s forwards, bounce-top 3s linear infinite alternate-reverse both;
+            font-size: clamp(0.5rem, 5vw, 2rem);
+            animation-delay: 1s, 1s;
+            position: absolute;
+
+        }
+
+    }
+
+    // @keyframes color-change-2x {
+    //     0% {
+    //         background: #BEADFA;
+    //     }
+
+    //     100% {
+    //         background: rgba(189, 162, 203, 1);
+    //     }
+    // }
+
+    @keyframes vibrate-1 {
+        0% {
+            transform: translate(0);
+        }
+
+        20% {
+            transform: translate(-2px, 2px);
+        }
+
+        40% {
+            transform: translate(-2px, -2px);
+        }
+
+        60% {
+            transform: translate(2px, 2px);
+        }
+
+        80% {
+            transform: translate(2px, -2px);
+        }
+
+        100% {
+            transform: translate(0);
+        }
+    }
+
+
+    @keyframes bounce-top {
+        0% {
+            transform: translateY(-45px);
+            animation-timing-function: ease-in;
+            opacity: 1;
+        }
+
+        24% {
+            opacity: 1;
+        }
+
+        40% {
+            transform: translateY(-24px);
+            animation-timing-function: ease-in;
+        }
+
+        65% {
+            transform: translateY(-12px);
+            animation-timing-function: ease-in;
+        }
+
+        82% {
+            transform: translateY(-6px);
+            animation-timing-function: ease-in;
+        }
+
+        93% {
+            transform: translateY(-4px);
+            animation-timing-function: ease-in;
+        }
+
+        25%,
+        55%,
+        75%,
+        87% {
+            transform: translateY(0px);
+            animation-timing-function: ease-out;
+        }
+
+        100% {
+            transform: translateY(0px);
+            animation-timing-function: ease-out;
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes drop {
+        to {
+            top: 0;
+        }
+    }
+
+
+    // @include xs {
+    //     background-color: white;
+    // }
+
+    // @include sm {
+    //     background-color: green;
+    // }
+
+    // @include md {
+    //     background-color: blue;
+    // }
+
+    // @include lg {
+    //     background-color: yellow;
+    // }
+
+    // @include xl {
+    //     background-color: purple;
+    // }
+}
