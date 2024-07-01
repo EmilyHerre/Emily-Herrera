@@ -2,7 +2,7 @@
 import { SVGProps } from "react"
 const GirlLogo
     = (props: SVGProps<SVGSVGElement>) => (
-        <svg className="girl-logo"
+        <svg className="girl"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 384.62 533.17"
             {...props}
