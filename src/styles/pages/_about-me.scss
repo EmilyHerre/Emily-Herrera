@@ -64,19 +64,19 @@
         }
 
         @include sm {
-            background-color: green;
+          //  background-color: green;
         }
 
         @include md {
-            background-color: blue;
+         //   background-color: blue;
         }
 
         @include lg {
-            background-color: yellow;
+         //   background-color: yellow;
         }
 
         @include xl {
-            background-color: purple;
+        // background-color: purple;
         }
     }
 }
