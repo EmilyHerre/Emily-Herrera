@@ -1,0 +1,25 @@
+@import '../abstracts/';
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-light);
+    gap: 2rem;
+
+    .section-header {
+        padding: 10%;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: clamp(4rem, 10vw, 7rem);
+
+    }
+
+    .projects {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 16px;
+        padding: 16px;
+    }
+}

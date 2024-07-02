@@ -1,0 +1,35 @@
+.section-skills {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 2rem;
+
+    .section-header-skills {
+        padding: 10%;
+        display: flex;
+        justify-content: center;
+        color: var(--purple-words);
+        font-size: clamp(4rem, 10vw, 7rem);
+    }
+
+    .devSkills {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 3fr));
+        gap: 16px;
+        padding: 16px;
+        align-items: center;
+
+        .devSkill-image {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        #css {
+            width: 80%;
+            height: 80%;
+        }
+    }
+}

@@ -5,7 +5,8 @@
     @include xs {
         // background-color: pink;
         padding: 5%;
-
+        margin-bottom: 5%;
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -22,7 +23,7 @@
 
             .resalted {
                 font-weight: 600;
-                color: #632584;
+                color: var(--purple-words);
             }
 
             .box {
@@ -35,7 +36,7 @@
 
                     padding: 6%;
                     font-size: clamp(1.5rem, 7vw, 3rem);
-                    color: #632584;
+                    color: var(--purple-words);
                 }
 
 

@@ -1,5 +1,7 @@
 import { AboutMe } from "./AboutMe";
+import { DevSkills } from "./DevSkills";
 import { Header } from "./Header";
+import { Projects } from "./Projects";
 
 
 
@@ -10,7 +12,8 @@ export const HomeScreen = () => {
                 <Header></Header>
                 <div className="home-container">
                     <AboutMe></AboutMe>
-                    <AboutMe></AboutMe>
+                    <Projects></Projects>
+                    <DevSkills></DevSkills>
                 </div>
 
             </div>
