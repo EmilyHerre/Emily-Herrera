@@ -1,4 +1,5 @@
 import { IProject } from "../data/IProjects";
+import { Card } from "./Card";
 
 
 export const ProjectCard = ({ name, description, technologies }: IProject) => {
@@ -6,20 +7,20 @@ export const ProjectCard = ({ name, description, technologies }: IProject) => {
     return (
 
         <>
-            <div className="card">
-                <div className="card-header">
-                    <h2 className="card-title lato-light">{name}</h2>
-                    {/* <img src={image} className="card-image" > </img> */}
-                </div>
-                <div className="card-body">
+            <Card
+                header={
+                    <h2 className="project-title lato-light">{name}</h2>
+                }
+                body={
+                    <p className="project-description lato-light">{description}
+                    </p>
+                }
+                footer={
+                    <div className="project-technologies lato-light">{technologies.map((technology) => <span key={technology}>{technology}</span>)}
+                    </div>
+                }>
 
-                    <p className="card-description lato-light">{description}</p>
-
-                </div>
-                <div className="card-footer">
-                    <div className="card-technologies lato-light">{technologies.map((technology) => <span key={technology}>{technology}</span>)}</div>
-                </div>
-            </div>
+            </Card >
         </>
     );
 }

@@ -20,13 +20,6 @@
     padding: 16px;
 }
 
-.card-title {
-    margin: 0;
-    font-size: clamp(1.5rem, 7vw, 3rem);
-
-    color: var(--purple-words);
-}
-
 .card-image {
     width: 100%;
     height: auto;
@@ -50,18 +43,4 @@
     padding: 16px;
     display: flex;
     flex-wrap: wrap;
-}
-
-.card-technologies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.card-technologies span {
-    background-color: var(--purple-words);
-    border-radius: 25px;
-    padding: 4px 8px;
-    font-size: clamp(0.8rem, 4vw, 3rem);
-    color: white;
 }
